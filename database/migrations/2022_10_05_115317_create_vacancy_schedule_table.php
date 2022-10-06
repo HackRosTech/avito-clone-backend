@@ -15,6 +15,7 @@ class CreateVacancyScheduleTable extends Migration
     {
         Schema::create('vacancy_schedule', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->timestamps();
         });
     }
